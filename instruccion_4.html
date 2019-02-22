@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python | Reconocimiento Facial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="content-all">
+    <header>
+        <a href='index.html' class="especial"><button type="button" class="btn btn-default btn-option">PythonClub.</button> Python Environments Learning</a>
+        <nav class="navbar navbar-inverse nav-home">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Python</a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="instruccion_1.html"> Instrucción N°1 - Anaconda </a></li>
+                        <li><a href="instruccion_2.html"> Instrucción N°2 - Numpy </a></li>
+                        <li><a href="instruccion_3.html"> Instrucción N°3 - openCV </a></li>
+                        <li class="active"><a href="instruccion_4.html"> Probando Reconocimiento Facial </a></li>
+                        <li><a href="error.html"> Solucionando Posible Error </a></li>          
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="contenido">
+        <div class="col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" class="img-responsive">
+                <div class="caption">
+                    <h3>Usaremos dos librerias extras - Sqlite y Pillow(PIL)</h3>
+                    <p>Abrimos Anaconda-Navigator</p>
+                    <p>Nos dirigimos a la pestaña Environments</p>
+                    <p>En la pestaña que sale a su derecha damos click al espacio privado(entorno) previamente que hemos creado en mi caso fue PythonClub</p>
+                    <p>Vamos a Installed y cambiamos por Not Installed y buscamos sqlite lo seleccionamos en el cuadrito pequeño y le damos apply, hacemos lo mismo para pillow.</p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" id="mymodal">Click para previsualizar</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="http://ezequielaguilar.com.pa/wp-content/uploads/2016/03/reconocimiento-facial-ezequiel-aguilar-gonzalez-1038x554.jpg" class="img-responsive">
+                <div class="caption">
+                    <h3>Lugar de Ubicacion del Archivo</h3>
+                    <p>Creamos una carpeta en el Disco C con el nombre a su gusto,en mi caso (PythonClub)</p>
+                    <p>Copiamos el archivo o carpeta donde estan nuestros archivos.py a usar dentro de carpeta creada en el disco C</p>
+                    <p>Listo ,ya tienes tus archivos en un lugar especifico.</p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" id="mymodal1">Click para previsualizar</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="https://segundoenfoque.com/wp-content/uploads/2018/03/reconocimiento-facial-en-peru-768x422.jpg" class="img-responsive">
+                <div class="caption">
+                    <h3>Probando el Programa de Reconocimiento Facial</h3>
+                    <p>Abrir cmd y escribir activate (Nombre de tu entorno) en mi caso (activate PythonClub) y darle enter</p>
+                    <p>Escribir cd C:\(nombre de la carpeta creada) en mi caso seria cd C:\PythonClub y darle enter,con eso ya estas dentro de tu carpeta. </p>
+                    <p>Escribir python (nombre del archivo que quieres abrir con su extension) en mi caso seria python 4_RECONOCIMIENTO.py</p>
+                    <p>NOTA:Recuerde que no se reconocen espacios en separacion de palabras por lo cual debera poner guion bajo.</p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" id="mymodal2">Click para previsualizar</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id=mymodalshow>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Previsualización</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Visualizaremos donde debe dar click</p>
+                    <img src="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/51777837_2240644282845429_7247054981767888896_o.jpg?_nc_cat=107&_nc_ht=scontent.ftru1-1.fna&oh=d25ac52d973a00324417251f4e6c0532&oe=5CEF63A8" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id=mymodalshow1>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Previsualización</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Debe quedar de la siguiente manera.</p>
+                    <img src="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/52567644_2240645489511975_6435263999129944064_n.jpg?_nc_cat=103&_nc_ht=scontent.ftru1-1.fna&oh=ff68b9cae980deaba98ff301081d8406&oe=5CE75FD8" class="img-responsive center-block">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id=mymodalshow2>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Previsualización</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Debe salir de la siguiente manera para comprobar.</p>
+                    <img src="https://justinshenk.github.io/images/opencv.png" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python | Error</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="content-all">
+    <header>
+        <a href='index.html' class="especial"><button type="button" class="btn btn-default btn-option">PythonClub.</button> Python Environments Learning</a>
+        <nav class="navbar navbar-inverse nav-home">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Python</a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="instruccion_1.html"> Instrucción N°1 - Anaconda </a></li>
+                        <li><a href="instruccion_2.html"> Instrucción N°2 - Numpy </a></li>
+                        <li><a href="instruccion_3.html"> Instrucción N°3 - openCV </a></li>
+                        <li><a href="instruccion_4.html"> Probando Reconocimiento Facial </a></li>
+                        <li class="active"><a href="error.html"> Solucionando Posible Error </a></li>          
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="contenido">
+        <div class="col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="https://www.ionos.mx/digitalguide/fileadmin/DigitalGuide/Teaser/error-t.jpg" class="img-responsive">
+                <div class="caption">
+                    <h3>Veamos de que Trata</h3>
+                    <p>Al momento de Probar nos sale el error</p>
+                    <p>cv2.error: OpenCV(3.4.2) C:\Miniconda3\conda-bld\opencv-suite_1534379934306\work\modules\objdetect\src\cascadedetect.cpp:1698: 
+                        error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'</p>
+                    <p>Si tienen ese error estan en el camino correcto no desesperen.</p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" id="mymodal">Click para previsualizar</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="https://magazine.joomla.org/media/k2/items/cache/4b767812663b80b340af87b3a2927015_XL.jpg" class="img-responsive">
+                <div class="caption">
+                    <h3>Solucionemoslo</h3>
+                    <p>Primero descargaremos el siguiente archivo : <a href="http://download1077.mediafire.com/9o7tscs65mxg/yl81lpe7ryweyfh/haarcascade_frontalface_default.xml">Click Aqui</a></p>
+                    <p>Copiamos el archivo que descargamos en la carpeta donde esta nuestro programa de Reconocimiento.</p>
+                    <p>Listo ,ya deberia funcionar.</p>
+                    <p>En caso persista error edite el archivo donde encuentre ('haarcascade_frontalface_default.xml')
+                        lo cambiara por la ubicacion del archivo que acaba de copiar en la carpeta en mi caso seria('C:\PythonClub\haarcascade_frontalface_default.xml')
+                        guardar el archivo y ejecutar nuevamente, ya deberia estar solucionado.
+                    </p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" id="mymodal1">Click para previsualizar</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="https://cdn2.ticbeat.com/src/uploads/2016/03/marcas-reconocimiento-facial-810x543.jpg?x32709" class="img-responsive">
+                <div class="caption">
+                    <h3>Probando Nuevamente sin error</h3>
+                    <p>Abrir cmd y escribir activate (Nombre de tu entorno) en mi caso (activate PythonClub) y darle enter</p>
+                    <p>Escribir cd C:\(nombre de la carpeta creada) en mi caso seria cd:\PythonClub y darle enter,con eso ya estas dentro de tu carpeta. </p>
+                    <p>Escribir python (nombre del archivo que quieres abrir con su extension) en mi caso seria python 4_RECONOCIMIENTO.py</p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" id="mymodal2">Click para previsualizar</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id=mymodalshow>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Previsualización</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Visualizaremos el error que me aparecio.</p>
+                    <img src="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/52130103_2240649919511532_4503153698096021504_n.jpg?_nc_cat=100&_nc_ht=scontent.ftru1-1.fna&oh=b52f68d360c04b62cdcb325819a73a5f&oe=5CE10F0D" class="img-responsive center-block">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id=mymodalshow1>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Previsualización</h4>
+                </div>
+                <div class="modal-body">
+                    <p>visualizaremos el archivo que copie.</p>
+                    <img src="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/51769798_2240651062844751_4705245086332485632_n.jpg?_nc_cat=109&_nc_ht=scontent.ftru1-1.fna&oh=1ad0353064c59b34a902719a1171a5cd&oe=5CDF1640" class="img-responsive center-block">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id=mymodalshow2>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Previsualización</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Solucionado el problema.</p>
+                    <img src="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/51895214_2240659442843913_7496600995506421760_n.jpg?_nc_cat=108&_nc_ht=scontent.ftru1-1.fna&oh=ae7b246917285812baea0925923f3d49&oe=5CEF8518" class="img-responsive center-block">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+</html>

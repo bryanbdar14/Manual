@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python | openCV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="content-all">
+    <header>
+        <a href='index.html' class="especial"><button type="button" class="btn btn-default btn-option">PythonClub.</button> Python Environments Learning</a>
+        <nav class="navbar navbar-inverse nav-home">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Python</a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="instruccion_1.html"> Instrucción N°1 - Anaconda </a></li>
+                        <li><a href="instruccion_2.html"> Instrucción N°2 - Numpy </a></li>
+                        <li class="active"><a href="instruccion_3.html"> Instrucción N°3 - openCV </a></li>
+                        <li><a href="instruccion_4.html"> Probando Reconocimiento Facial </a></li>
+                        <li><a href="error.html"> Solucionando Posible Error </a></li>            
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="contenido">
+        <div class="col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="http://robologs.net/wp-content/uploads/2014/04/opencv_logo.png" class="img-responsive">
+                <div class="caption">
+                    <h3>Usaremos el Espacio Privado(Entorno)</h3>
+                    <p>Abrimos Anaconda-Navigator</p>
+                    <p>Nos dirigimos a la pestaña Environments</p>
+                    <p>En la pestaña que sale a su derecha damos click al espacio privado(entorno) previamente que hemos creado en mi caso fue PythonClub</p>
+                    <p>Si fuese el caso no hubiese creado ningun entorno, crearlo</p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" id="mymodal">Click para previsualizar</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="https://vueloartificial.com/wp-content/uploads/2016/01/OpenCV-y-Python-MACOS.png" class="img-responsive">
+                <div class="caption">
+                    <h3>Descargaremos la Libreria openCV</h3>
+                    <p>En la pestaña derecha donde se visualizan diferentes librerias que vienen ya preinstaladas en la parte superior damos click donde dice Installed y seleccionamos Not Installed</p>
+                    <p>Ahora situamos el mouse donde dice Search Packages y damos click y escribimos openCV ,nos saldran varias librerias de las cuales seleccionamos la que dice opencv.</p>
+                    <p>Darle click en la seccion cuadrada pequeña para seleccionar open cv, saldran dos boton en la parte inferior, darle click a Apply.</p>
+                    <p>Saldra una ventana que dice Install Packages, darle click a Apply que esta en la parte inferior,esperar a que se instale y listo.</p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" id="mymodal1">Click para previsualizar</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="http://stamfordresearch.com/wp-content/uploads/2016/06/opencv-950x591.jpg" class="img-responsive">
+                <div class="caption">
+                    <h3>Comprobando que este Instalado</h3>
+                    <p>1° Forma .- En la parte donde dice Not Installed ,darle click y poner Installed ,escribir nuevamente 
+                        en la barra de busqueda opencv y ahora fijarse que se encontrara ahi en la parte de librerias instaladas.</p>
+                    <p>2° Forma .- Abrir cmd , escribir activate (Nombre que pusieron al crear su entorno privado)
+                        ,en mi caso seria ,activate PythonClub y darle enter .Escribir luego python --version y darle enter para comprobar la
+                         version de python que tiene instalado en su entorno ,luego escribir python y darle enter(le saldran estos simbolos >> que indica que ya abrio python) 
+                        ahora escriba import cv2 y darle enter ,si sale nuevamente >> esque ya esta instalado ,si sale error es un indicador que no siguio todos los pasos correctamente. </p>
+                    <p><button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" id="mymodal2">Click para previsualizar</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id=mymodalshow>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Previsualización</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Visualizaremos donde debe dar click</p>
+                    <img src="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/52534569_2240498616193329_4817792711459340288_o.jpg?_nc_cat=104&_nc_ht=scontent.ftru1-1.fna&oh=353c93c1c2fb5b1d4f2ab2a8a8c242eb&oe=5CDDDA62" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id=mymodalshow1>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Previsualización</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Debe quedar de la siguiente manera.</p>
+                    <img src="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/51735376_2240498679526656_3606197877665169408_o.jpg?_nc_cat=111&_nc_ht=scontent.ftru1-1.fna&oh=ea567b7e273043bd0d9d5f68c74ed197&oe=5CE9147D" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id=mymodalshow2>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Previsualización</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Debe quedar de la siguiente manera para comprobar.</p>
+                    <img src="https://scontent.ftru1-1.fna.fbcdn.net/v/t1.0-9/52598271_2240498699526654_338216751730786304_n.jpg?_nc_cat=106&_nc_ht=scontent.ftru1-1.fna&oh=4ae122a19c405473e97e1aa103ccc1c9&oe=5CF0FC83" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+</html>
